@@ -1,3 +1,4 @@
+
 /********** Template CSS **********/
 :root {
   --primary: #ffdac1;
@@ -515,4 +516,190 @@
 
 .footer .copyright a:hover {
   color: var(--primary);
+}
+/* Responsive Styles for Sunshine Guest Home */
+
+/* General Mobile Adjustments */
+@media (max-width: 767.98px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+    word-wrap: break-word;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 10px 0;
+    word-break: break-word;
+  }
+
+  .container,
+  .container-xxl,
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow-x: hidden;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+
+  .feature-text,
+  .service-item,
+  .team-item {
+    text-align: center;
+  }
+
+  .feature-text .row > div,
+  .service-item .row > div,
+  .team-item .row > div {
+    margin-bottom: 30px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 15px 10px;
+  }
+
+  .service-item,
+  .team-item {
+    padding: 30px 20px;
+  }
+}
+
+/* Medium and Larger Screens */
+@media (min-width: 992px) {
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar .navbar-brand {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+
+  .navbar .navbar-nav {
+    align-items: center;
+  }
+
+  .navbar .navbar-nav .nav-link {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .navbar .navbar-nav .nav-link.active,
+  .navbar .navbar-nav .nav-link:hover {
+    color: var(--primary);
+  }
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 15px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+
+  .btn-primary {
+    background-color: var(--primary);
+    border: none;
+  }
+
+  .navbar .btn {
+    padding: 12px 28px;
+    font-size: 15px;
+    line-height: 1.2;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    white-space: nowrap;
+  }
+}
+
+/* General Menu Adjustments */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .dropdown-menu {
+  min-width: 180px;
+  padding: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.navbar .dropdown-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.navbar .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+.navbar .btn {
+  margin-left: 20px;
+  padding: 12px 28px;
+  font-size: 15px;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  white-space: nowrap;
 }
