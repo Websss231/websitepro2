@@ -526,12 +526,13 @@
   }
 
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 30px;
     word-wrap: break-word;
+    text-align: center;
   }
 
   .btn {
@@ -587,6 +588,67 @@
   .row {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  /* Fix for Feature layout */
+  .feature .row.g-4 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature .d-flex.align-items-center {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature .ms-4 {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+
+  .feature h5 {
+    font-size: 17px;
+    word-wrap: break-word;
+  }
+
+  .feature p {
+    font-size: 15px;
+  }
+
+  /* Fix for Contact Info blocks */
+  .contact-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .contact-box h5,
+  .contact-box p {
+    font-size: 16px;
+  }
+
+  .contact-box i {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .contact-box .email {
+    font-size: 15px;
+    display: inline-block;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+
+  .contact-box .email span {
+    display: block;
+    overflow-wrap: anywhere;
+    text-align: center;
   }
 }
 
